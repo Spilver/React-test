@@ -9,6 +9,7 @@ import Contact from './pages/contact';
 import Blogs from './pages/blogs';
 import Server from './pages/server';
 import Welcome from './pages/welcome';
+import About from './pages/about';
   
 function App() {
 return (
@@ -20,6 +21,7 @@ return (
         <Route path='/blogs' element={<Blogs/>} />
         <Route path='/server' element={<Server/>} />
         <Route path='/welcome' element={<Welcome/>} />
+        <Route path='/about' element={<About/>} />
     </Routes>
     </Router>
 );

@@ -10,6 +10,7 @@ import "./NavbarElements.css";
               <Link to="/blogs">Blogs</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/server">Server</Link>
+              <Link to="/about">Nosotros</Link>
               <Link className="signup" to="/welcome">Ingresar</Link>
 
         </nav>
