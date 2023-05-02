@@ -11,6 +11,7 @@ import "./NavbarElements.css";
               <Link to="/contact">Contact</Link>
               <Link to="/server">Server</Link>
               <Link to="/about">Nosotros</Link>
+              <Link to="/usuarios">Usuarios</Link>
               <Link className="signup" to="/welcome">Ingresar</Link>
 
         </nav>

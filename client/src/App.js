@@ -10,6 +10,7 @@ import Blogs from './pages/blogs';
 import Server from './pages/server';
 import Welcome from './pages/welcome';
 import About from './pages/about';
+import Usuarios from './pages/usuarios';
   
 function App() {
 return (
@@ -22,6 +23,7 @@ return (
         <Route path='/server' element={<Server/>} />
         <Route path='/welcome' element={<Welcome/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/usuarios' element={<Usuarios/>} />
     </Routes>
     </Router>
 );
