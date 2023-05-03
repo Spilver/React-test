@@ -27,7 +27,38 @@ export default function Login({ setToken }) {
   }
 
   return(
-    <div className="login-wrapper">
+    <section>
+        <div className="form-box">
+            <div className="form-value">
+                <form onSubmit={handleSubmit}>
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" onChange={e => setUserName(e.target.value)} required/>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" onChange={e => setPassword(e.target.value)} required/>
+                        <label for="">Contraseña</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox"/>Recordarme  <a href="#">Olvide mi contraseña</a></label>
+                      
+                    </div>
+                    <button>Ingresar</button>
+                    <div class="register">
+                        <p>No tienes una cuenta? <a href="#">Registrate</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+  )
+}
+
+/*
+  <div className="login-wrapper">
       <h1>Please Log In</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -43,8 +74,8 @@ export default function Login({ setToken }) {
         </div>
       </form>
     </div>
-  )
-}
+*/
+
 
 Login.propTypes = {
   setToken: PropTypes.func.isRequired
